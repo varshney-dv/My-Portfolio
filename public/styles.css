@@ -1,0 +1,85 @@
+.title-photo{
+    width: 100%;
+}
+.title-photo img{
+    height: 100vh;
+    width: 100%;
+}
+.title{
+    
+    
+    margin-bottom: 10px;
+
+}
+.intro{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title img{
+    border-radius: 50%;
+    border: 3px solid rgb(73, 166, 253);
+    margin-top: 20px;
+}
+.heading{
+    color: rgb(73, 166, 253);
+}
+.para-text{
+    color: rgb(105, 105, 105) !important;
+}
+.title-text{
+    text-align: center;
+}
+.fs-4 {
+    font-size: calc(2.0rem + .3vw) !important;
+}
+.resume-page{
+    background-color: whitesmoke;
+}
+.intro{
+    margin-top: 10px;
+    
+}
+.background{
+    background-color: whitesmoke !important;
+}
+.card-body{
+    color:rgb(105, 105, 105);
+}
+.about-heading{
+    color: rgb(45, 9, 204);
+    text-align: center;
+    border:2px dotted brown ;
+    
+}
+.contact-section{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+.name-dv{
+    font-weight: 900;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: hotpink;
+}
+@media (max-width:1200px) {
+    .title-photo img{
+        height: 600px;
+        width: 100%;
+    }
+}
+@media (max-width:800px) {
+    .title-photo img{
+        height: 300px;
+        width: 100%;
+    }
+    .row-cols-sm-2>* {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+}
