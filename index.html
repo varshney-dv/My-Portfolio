@@ -3,185 +3,480 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DV Website</title>
+    <title>Divyanshu Varshney | Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./public/styles.css">
-
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- AOS library for scroll animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 <body>
-    <section class="hero-section">
-        <div class="title-photo">
-            <div class="col-12 title-photo">
-                <img src="./assets/Title.png" alt="Title"  >
+    <!-- Navbar Addition -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">DV</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="intro" >
-            <div class="title "><img src="./assets/profile-photo.png" alt="Profile Photo"></div>
+    </nav>
+
+    <!-- Hero Section with ID -->
+    <section class="hero-section" id="home">
+        <div class="title-photo" data-aos="fade-down">
+            <div class="col-12 title-photo">
+                <img src="./assets/Title.png" alt="Title">
+            </div>
+        </div>
+        <div class="intro">
+            <div class="title" data-aos="fade-right" data-aos-delay="200">
+                <img src="./assets/profile-photo.png" alt="Profile Photo">
+            </div>
             
-            <div class="title title-text"> 
-              <h2 class="heading name-dv">Divyanshu Varshney</h2>
-                <p class="para-text">I'm a CSE student ✒️ of NIT Jalandhar,Punjab<br>
-                    Proudly hailing 🏡 from Aligarh, U.P. <br>Join me on my journey as I delve into the world Technology.<br><br></p>
+            <div class="title title-text" data-aos="fade-left" data-aos-delay="400"> 
+                <h2 class="heading name-dv">Divyanshu Varshney</h2>
+                <p class="para-text">
+                  I’m a Computer Science & Engineering student at NIT Jalandhar ✨<br>
+                  Proudly rooted in Aligarh, U.P. 🏡<br>
+                  Exploring the world of technology, one line of code at a time.
+                </p>
+                <div class="mt-4">
+                    <a href="#contact" class="btn btn-primary rounded-pill px-4 me-2">Contact Me</a>
+                    <a href="#projects" class="btn btn-outline-primary rounded-pill px-4">My Projects</a>
+                </div>
             </div>
         </div>
     </section>
     
     <section class="resume-page">
-        <!-- My Eductaion -->
-        <div class="album py-3 ">
-            <div class="container" class="background">
-                <h2 class="border-bottom heading ">MY EDUCATION</h2>
-              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                
-                <div class="col">
-                  <div class="card shadow-sm">
-                    <div class="card-body">
-                      <p class="card-text para-text" ><img src="./assets/gdps.jpg" alt="GDPS_Photo" width="100%" height="250%"><h3>G.D.P.S.</h3>Studied from class:-<br>Playgroup to 10th from G.D. Public School , Aligarh</p>
-                    </div>
+        <!-- My Education -->
+        <div class="album py-5" id="education">
+          <div class="container background">
+              <h2 class="border-bottom heading" data-aos="fade-right">MY EDUCATION</h2>
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+      
+                  <!-- NIT Jalandhar -->
+                  <div class="col" data-aos="fade-up" data-aos-delay="100">
+                      <div class="card shadow-sm h-100">
+                          <div class="card-body">
+                              <img src="./assets/nitj.jpg" alt="NITJ Photo" width="100%" height="250">
+                              <h3 class="mt-3">NIT Jalandhar</h3>
+                              <p class="card-text para-text">
+                                  Currently pursuing B.Tech in Computer Science and Engineering (Batch 2023–2027)<br>
+                                  <strong>CGPA:</strong> 8.5 (as of now)
+                              </p>
+                          </div>
+                      </div>
                   </div>
-                </div>
-                <div class="col">
-                  <div class="card shadow-sm">
-                    
-                    <div class="card-body">
-                      <p class="card-text para-text" ><img src="./assets/amu.jpg" alt="AMU Image" width="100%" height="250px"><h3>AMU University</h3>Studied from class:-<br>11th to 12th from Sayyid Hamid Sr. Sec. School, Aligarh Muslim University , Aligarh</p>
-                    </div>
+      
+                  <!-- AMU -->
+                  <div class="col" data-aos="fade-up" data-aos-delay="200">
+                      <div class="card shadow-sm h-100">
+                          <div class="card-body">
+                              <img src="./assets/amu.jpg" alt="AMU Image" width="100%" height="250">
+                              <h3 class="mt-3">AMU – Aligarh Muslim University</h3>
+                              <p class="card-text para-text">
+                                  Completed 11th and 12th from Sayyid Hamid Senior Secondary School (2020–2022)<br>
+                                  <strong>Score:</strong> 95%<br>
+                                  <strong>Achievement:</strong> Class Topper
+                              </p>
+                          </div>
+                      </div>
                   </div>
-                </div>
-                <div class="col">
-                  <div class="card shadow-sm">
-                    
-                    <div class="card-body">
-                      <p class="card-text para-text" ><img src="./assets/nitj.jpg" alt="NITJ Photo" width="100%" height="250px"><h3>NITJ</h3>Currently Pursuing B.Tech in Computer Science Branch , Batch 2027 from National Institute of Technology Jalandhar</p>
-                      
-                    </div>
+      
+                  <!-- GDPS -->
+                  <div class="col" data-aos="fade-up" data-aos-delay="300">
+                      <div class="card shadow-sm h-100">
+                          <div class="card-body">
+                              <img src="./assets/gdps.jpg" alt="GDPS Photo" width="100%" height="250">
+                              <h3 class="mt-3">G.D. Public School</h3>
+                              <p class="card-text para-text">
+                                  Studied from Playgroup to 10th (2007–2020)<br>
+                                  <strong>Score:</strong> 96% in 10th Boards<br>
+                                  <strong>Achievement:</strong> School Ranker
+                              </p>
+                          </div>
+                      </div>
                   </div>
-                </div>
-                
+      
+              </div>
+          </div>
+      </div>
+      
+
+        
+        <!-- MY Skills -->
+        <div class="container px-4 py-5" id="skills">
+          <h2 class="border-bottom heading" data-aos="fade-right">MY SKILLS</h2>
+          <div class="row g-4 py-4 row-cols-1 row-cols-lg-3">
+        
+            <!-- CP -->
+            <div class="col" data-aos="fade-up" data-aos-delay="100">
+              <div class="card shadow-sm h-100 p-3">
+                <h5 class="text-primary">Competitive Programming</h5>
+                <p class="para-text mb-1">Max CF Rating: <strong>1188</strong></p>
+                <p class="para-text mb-1">200+ LeetCode Questions</p>
+                <p class="para-text">Good grip on DSA & problem-solving</p>
               </div>
             </div>
-          </div>
-          <!-- MY Skills -->
-        <div class="container px-4 py-3" id="hanging-icons" class="background">
-            <h2 class="border-bottom heading ">MY Skills</h2>
-            <div class="row g-4 py-3 row-cols-1 row-cols-lg-3">
-              <div class="col d-flex align-items-start">
-                <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-                  <svg class="bi" width="1em" height="1em"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-filetype-js" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2H8v-1h4a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zM3.186 15.29a1.2 1.2 0 0 1-.111-.449h.765a.58.58 0 0 0 .255.384q.105.073.249.114.143.041.319.041.246 0 .413-.07a.56.56 0 0 0 .255-.193.5.5 0 0 0 .085-.29.39.39 0 0 0-.153-.326q-.151-.12-.462-.193l-.619-.143a1.7 1.7 0 0 1-.539-.214 1 1 0 0 1-.351-.367 1.1 1.1 0 0 1-.123-.524q0-.366.19-.639.19-.272.528-.422.336-.15.776-.149.457 0 .78.152.324.153.5.41.18.255.2.566h-.75a.56.56 0 0 0-.12-.258.6.6 0 0 0-.247-.181.9.9 0 0 0-.369-.068q-.325 0-.513.152a.47.47 0 0 0-.184.384q0 .18.143.3a1 1 0 0 0 .405.175l.62.143q.327.075.566.211.24.136.375.358t.135.56q0 .37-.188.656a1.2 1.2 0 0 1-.539.439q-.351.158-.858.158-.381 0-.665-.09a1.4 1.4 0 0 1-.478-.252 1.1 1.1 0 0 1-.29-.375m-3.104-.033A1.3 1.3 0 0 1 0 14.791h.765a.6.6 0 0 0 .073.27.5.5 0 0 0 .454.246q.285 0 .422-.164.138-.165.138-.466v-2.745h.79v2.725q0 .66-.357 1.005-.354.345-.984.345a1.6 1.6 0 0 1-.569-.094 1.15 1.15 0 0 1-.407-.266 1.1 1.1 0 0 1-.243-.39"/>
-                  </svg></svg>
-                </div>
-                <div>
-                  <h3 class="fs-7 text-body-emphasis">Web Development</h3>
-                  <p class="para-text">Creating and maintaining websites and web applications, involving:
-                    <ul class="para-text">
-                        <li>Create and maintain websites and web apps.</li>
-                        <li>Build interactive UIs with HTML, CSS, JavaScript.</li>
-                    </ul>
-                    </p>
-                </div>
-              </div>
-              <div class="col d-flex align-items-start">
-                <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-                  <svg class="bi" width="1em" height="1em"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-filetype-py" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2H7v-1h5a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zM0 11.85h1.6q.434 0 .732.179.302.175.46.477t.158.677-.16.677q-.158.299-.464.474a1.45 1.45 0 0 1-.732.173H.79v1.342H0zm2.06 1.714a.8.8 0 0 0 .085-.381q0-.34-.185-.521-.185-.182-.513-.182H.788v1.406h.66a.8.8 0 0 0 .374-.082.57.57 0 0 0 .238-.24m2.963.75v1.535H4.23v-1.52L2.89 11.85h.876l.853 1.696h.032l.856-1.696h.855z"/>
-                  </svg></svg>
-                </div>
-                <div>
-                  <h3 class="fs-7 text-body-emphasis">Python</h3>
-                  <p class="para-text">
-                    A versatile, high-level programming language and i use for:
-                    <ul class="para-text">
-                        <li>Develop web applications.</li>
-                        <li>Automate tasks.</li>
-                        <li>Analyze data with NumPy and pandas.</li>
-                    </ul>
-                  </p>
-                </div>
-              </div>
-              <div class="col d-flex align-items-start">
-                <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-                  <svg class="bi" width="1em" height="1em"> <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
-                    <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"/>
-                  </svg></svg>
-                </div>
-                <div>
-                  <h3 class="fs-7 text-body-emphasis">DSA</h3>
-                  <p class="para-text">I can solve complex problems efficiently by utilizing optimal data structures and algorithms :
-                    <ul class="para-text">
-                        <li>Codeforces , Contents</li>
-                        <li>Leetcode , Questions-practice</li>
-                    </ul>
-                  </p>
-                </div>
+        
+            <!-- Web Dev -->
+            <div class="col" data-aos="fade-up" data-aos-delay="200">
+              <div class="card shadow-sm h-100 p-3">
+                <h5 class="text-success">Web Development</h5>
+                <p class="para-text mb-1">MERN Stack Developer</p>
+                <p class="para-text mb-1">HTML, JavaScript, Tailwind CSS</p>
+                <!-- <p class="para-text">Frontend & Backend Projects</p> -->
               </div>
             </div>
+        
+            <!-- Languages -->
+            <div class="col" data-aos="fade-up" data-aos-delay="300">
+              <div class="card shadow-sm h-100 p-3">
+                <h5 class="text-warning">Technical Languages</h5>
+                <p class="para-text">C++, C, Python, JavaScript</p>
+              </div>
+            </div>
+        
+            <!-- Non-Tech Lang -->
+            <div class="col" data-aos="fade-up" data-aos-delay="400">
+              <div class="card shadow-sm h-100 p-3">
+                <h5 class="text-danger">Languages Known</h5>
+                <p class="para-text">English, Hindi, Urdu</p>
+              </div>
+            </div>
+        
+            <!-- Core CS -->
+            <div class="col" data-aos="fade-up" data-aos-delay="500">
+              <div class="card shadow-sm h-100 p-3">
+                <h5 class="text-info">Core Subjects</h5>
+                <p class="para-text">DBMS, DSA, OOPS, Data Visualization</p>
+              </div>
+            </div>
+        
           </div>
-          <div class="container">
-            <h2 class="border-bottom heading ">MY Projects</h2>
-          <table class="table table-striped">
-            <tr>
-                <th>S.No.</th>
-                <th>Project</th>
-                <th>Description</th>
-                <th>Link</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>HackMol5.0</td>
-                <td>Win HackMol5.0 hackthon that was Conducted by NITJ official @GDSC Club in 2024.</td>
-                <td><a href="https://youtu.be/8ECdUSBHA6s?si=eEHaFe4NjikXfhac" target="_blank">Click Here</a></td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>NITJ Gallery</td>
-                <td>Make an page that having nitj pictures with some animated form.</td>
-                <td><a href="https://varshney-dv.github.io/NITJ_GALLERY/" target="_blank">Click Here</a></td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Password Generator</td>
-                <td>Using Javascripts i construct a password generator
-                   that also convey the strength and having different facilities</td>
-                <td><a href="https://varshney-dv.github.io/password-generator/" target="_blank">Click Here</a></td>
-            </tr>
-          </table>
-          <h2 class="border-bottom heading ">Experiences<br></h2>
-          
-          <ul>
-            <li>Member of <b>AMUSU CLUB</b> , Political club of AMU</li>
-            <li>Member of <b>CODEX</b> , Coding Club of AMU</li>
-            <li>Member of <b>BAWARE CLUB</b> , Dramatics club of NITJ</li>
-          </ul>
-          </div>
-    </section>
-
-    <section class="projects-works">
-
-    </section>
-    <hr>
-    <div class="container">
-        <h2 class="about-heading">For Contact Me</h2>
-        <div class="container contact-section">
-          <p ><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
-          </svg><br><a href="https://github.com/varshney-dv" target="_blank">Github</a></p>
-          <p ><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-envelope-at" viewBox="0 0 16 16">
-            <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z"/>
-            <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648m-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"/>
-          </svg><br><a href="mailto:dv373737@gmail.com" target="_blank">Mail</a></p>
-          <p ><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
-          </svg><br><a href="https://www.linkedin.com/in/divyanshu-varshney-91835128a" target="_blank">LinkedIn</a> </p>
-          <p ><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-          </svg><br> <a href="https://www.instagram.com/varshney__dv/" target="_blank">Insta</a></p>
         </div>
+        
+
+        <!-- Projects Section -->
+        <div class="container" id="projects">
+          <h2 class="border-bottom heading" data-aos="fade-right">MY PROJECTS</h2>
+          <div class="table-responsive" data-aos="fade-up">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Project</th>
+                  <th>Description</th>
+                  <th>Link</th>
+                </tr>
+              </thead>
+              <tbody>
+        
+                <tr class="hover-scale">
+                  <td><i class="fas fa-rocket text-primary me-2"></i>Seat Set Go</td>
+                  <td>Co-founder of a startup to guide JEE students in JOSAA counselling with mentorship & best choice filling.</td>
+                  <td><a href="https://www.seatsetgo.live" target="_blank" class="btn btn-sm btn-outline-primary">
+                    <i class="fas fa-external-link-alt me-1"></i>Visit</a></td>
+                </tr>
+        
+                <tr class="hover-scale">
+                  <td><i class="fas fa-trophy text-warning me-2"></i>Go With Ease</td>
+                  <td>HackMol 5.0 (2nd Place) – Smart railway ticket updates for college students based on academic calendar.</td>
+                  <td><a href="https://www.youtube.com/watch?si=eEHaFe4NjikXfhac&v=8ECdUSBHA6s" target="_blank" class="btn btn-sm btn-outline-primary">
+                    <i class="fas fa-external-link-alt me-1"></i>Watch Demo</a></td>
+                </tr>
+        
+                <tr class="hover-scale">
+                  <td><i class="fas fa-stethoscope text-success me-2"></i>V K Hospital</td>
+                  <td>Doctor appointment portal with patient, doctor & admin panels built using MERN stack.</td>
+                  <td><a href="https://www.vkhospital.shop" target="_blank" class="btn btn-sm btn-outline-primary">
+                    <i class="fas fa-external-link-alt me-1"></i>Visit</a></td>
+                </tr>
+        
+                <tr class="hover-scale">
+                  <td><i class="fas fa-users text-info me-2"></i>Student's Placement Portal</td>
+                  <td>Collaborated on NITJ CSE Placement Portal to manage students’ interview experiences.</td>
+                  <td><a href="https://placement-portal-cse.vercel.app/" target="_blank" class="btn btn-sm btn-outline-primary">
+                    <i class="fas fa-external-link-alt me-1"></i>Visit</a></td>
+                </tr>
+        
+                <tr class="hover-scale">
+                  <td><i class="fas fa-image text-danger me-2"></i>NITJ Gallery</td>
+                  <td>Gallery site to showcase photos from NITJ with animations and smooth design.</td>
+                  <td><a href="https://varshney-dv.github.io/NITJ_GALLERY/" target="_blank" class="btn btn-sm btn-outline-primary">
+                    <i class="fas fa-external-link-alt me-1"></i>Visit</a></td>
+                </tr>
+        
+                <tr class="hover-scale">
+                  <td><i class="fas fa-key text-secondary me-2"></i>Password Generator</td>
+                  <td>JS-based password generator with strength indicator & customization features.</td>
+                  <td><a href="https://varshney-dv.github.io/password-generator/" target="_blank" class="btn btn-sm btn-outline-primary">
+                    <i class="fas fa-external-link-alt me-1"></i>Visit</a></td>
+                </tr>
+        
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Experience Section -->
+<div class="container" id="experience">
+  <h2 class="border-bottom heading" data-aos="fade-right">EXPERIENCES</h2>
+  <div class="row mb-5" data-aos="fade-up">
+    <div class="col-md-6 mb-4 mb-md-0">
+      <div class="card h-100 hover-scale">
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-3">
+            <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <h4 class="mb-0">CodSoft Internship</h4>
+          </div>
+          <p class="text-muted">Frontend Developer (MERN Stack) - 1 Month Remote Internship (July 2024)</p>
+          <p class="para-text">Worked on developing frontend applications using MERN stack.</p>
+          <a href="https://drive.google.com/file/d/19P-UiUt8aYqUowl8c3_KtSOcgaUZ5fAJ/view" target="_blank" class="btn btn-sm btn-outline-primary">
+            <i class="fas fa-external-link-alt me-1"></i>Offer Letter</a>
+        </div>
+      </div>
     </div>
-    <hr>
-    <p class="text-center text-body-secondary">© 2024 | DV </p>
-    <section class="aboutme-contact">
+    <div class="col-md-6 mb-4 mb-md-0">
+      <div class="card h-100 hover-scale">
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-3">
+            <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <h4 class="mb-0">Cognifyz Internship</h4>
+          </div>
+          <p class="text-muted">Frontend Developer (HTML, TailwindCSS, JS) - 2 Months Remote Internship (June-July 2024)</p>
+          <p class="para-text">Worked on frontend web development using HTML, TailwindCSS, and JavaScript.</p>
+          <a href="https://drive.google.com/file/d/1DOQqSe6FvEOQdPDwLd0rz-6im8XLWOlK/view" target="_blank" class="btn btn-sm btn-outline-primary">
+            <i class="fas fa-external-link-alt me-1"></i>Offer Letter</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Clubs Section -->
+<div class="container" id="clubs">
+  <h2 class="border-bottom heading" data-aos="fade-right">CLUBS</h2>
+  <div class="row mb-5" data-aos="fade-up">
+    <div class="col-md-3 mb-4 mb-md-0">
+      <div class="card h-100 hover-scale">
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-3">
+            <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+              <i class="fas fa-users"></i>
+            </div>
+            <h4 class="mb-0">GDSC NITJ</h4>
+          </div>
+          <p class="text-muted">Google Developer Student Club</p>
+          <p class="para-text">Core Member at GDSC NITJ, contributing to tech-related events and projects.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 mb-4 mb-md-0">
+      <div class="card h-100 hover-scale">
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-3">
+            <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+              <i class="fas fa-users"></i>
+            </div>
+            <h4 class="mb-0">PACE NITJ</h4>
+          </div>
+          <p class="text-muted">CSE Society of NITJ</p>
+          <p class="para-text">Co-Secretary of PACE (CSE Society), organizing tech-related events and initiatives.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 mb-4 mb-md-0">
+      <div class="card h-100 hover-scale">
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-3">
+            <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+              <i class="fas fa-theater-masks"></i>
+            </div>
+            <h4 class="mb-0">BAWARE CLUB</h4>
+          </div>
+          <p class="text-muted">Dramatics Club of NITJ</p>
+          <p class="para-text">Active member of BAWARE Club, participating in various theatrical productions.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card h-100 hover-scale">
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-3">
+            <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+              <i class="fas fa-video"></i>
+            </div>
+            <h4 class="mb-0">IOTA CLUB</h4>
+          </div>
+          <p class="text-muted">Media Cell of NITJ</p>
+          <p class="para-text">Member of IOTA Club, NITJ's media cell, contributing to media-related events and content creation.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
     </section>
+
+    <!-- Contact Section -->
+    <section class="contact-page py-5" id="contact">
+      <div class="container">
+          <h2 class="text-center about-heading mb-5" data-aos="fade-up">FOR CONTACT ME</h2>
+          <div class="row justify-content-center">
+              <div class="col-lg-8">
+                  <div class="card shadow-lg border-0 rounded-lg">
+                      <div class="card-body p-5">
+                          <div class="container contact-section">
+                              <div class="row justify-content-center">
+                                <div class="col-md-3 col-6 text-center mb-4" data-aos="zoom-in" data-aos-delay="100">
+                                  <div class="contact-icon">
+                                      <a href="https://github.com/varshney-dv" target="_blank" style="text-decoration: none; color: inherit;">
+                                          <i class="fab fa-github fa-2x mb-3"></i>
+                                          <p>Github</p>
+                                      </a>
+                                  </div>
+                              </div>
+                              <div class="col-md-3 col-6 text-center mb-4" data-aos="zoom-in" data-aos-delay="200">
+                                  <div class="contact-icon">
+                                      <a href="https://mail.google.com/mail/?view=cm&to=divyanshu.varshney.work@gmail.com" target="_blank" style="text-decoration: none; color: inherit;">
+                                          <i class="fas fa-envelope fa-2x mb-3"></i>
+                                          <p>Mail</p>
+                                      </a>
+                                  </div>
+                              </div>
+                              <div class="col-md-3 col-6 text-center mb-4" data-aos="zoom-in" data-aos-delay="300">
+                                  <div class="contact-icon">
+                                      <a href="https://www.linkedin.com/in/divyanshu-varshney-91835128a/" target="_blank" style="text-decoration: none; color: inherit;">
+                                          <i class="fab fa-linkedin fa-2x mb-3"></i>
+                                          <p>LinkedIn</p>
+                                      </a>
+                                  </div>
+                              </div>
+                              <div class="col-md-3 col-6 text-center mb-4" data-aos="zoom-in" data-aos-delay="400">
+                                  <div class="contact-icon">
+                                      <a href="https://www.instagram.com/varshney__dv/" target="_blank" style="text-decoration: none; color: inherit;">
+                                          <i class="fab fa-instagram fa-2x mb-3"></i>
+                                          <p>Instagram</p>
+                                      </a>
+                                  </div>
+                              </div>
+                              
+                              </div>
+                          </div>
+                          
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+          <div class="row align-items-center">
+              <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                  <h4 class="mb-0">Divyanshu Varshney</h4>
+                  <p class="small mb-0">CSE Student @ NIT Jalandhar | Frontend Developer | Tech Enthusiast</p>
+              </div>
+              <div class="col-md-6 text-center text-md-end">
+                  <div class="social-icons">
+                      <a href="https://github.com/varshney-dv" target="_blank" class="me-3" style="color: white;">
+                          <i class="fab fa-github"></i>
+                      </a>
+                      <a href="https://mail.google.com/mail/?view=cm&to=divyanshu.varshney.work@gmail.com" target="_blank" class="me-3" style="color: white;">
+                          <i class="fas fa-envelope"></i>
+                      </a>
+                      <a href="https://www.linkedin.com/in/divyanshu-varshney-91835128a/" target="_blank" class="me-3" style="color: white;">
+                          <i class="fab fa-linkedin"></i>
+                      </a>
+                      <a href="https://www.instagram.com/varshney__dv/" target="_blank" style="color: white;">
+                          <i class="fab fa-instagram"></i>
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <hr class="my-3">
+          <p class="text-center  mb-0">© 2024 | Divyanshu Varshney | All Rights Reserved</p>
+      </div>
+  </footer>
+  
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- AOS (Animate On Scroll) Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- Custom script -->
+    <script src="./public/script.js"></script>
+    
+    <!-- Initialize AOS -->
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false
+        });
+        
+        // Add active class to navbar links based on scroll position
+        const sections = document.querySelectorAll('section[id]');
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                const sectionHeight = section.offsetHeight;
+                if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').substring(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+        
+        // Back to top button
+        const backToTopButton = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('show');
+            } else {
+                backToTopButton.classList.remove('show');
+            }
+        });
+    </script>
 </body>
 </html>
